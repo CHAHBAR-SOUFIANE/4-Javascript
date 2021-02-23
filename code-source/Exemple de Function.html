@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function</title>
+    <script type="text/javascript" >
+        // function sayHello(name,age){
+        //     document.write("the name is "+name+", and age is "+age);
+        // }
+        function Prix(produit1,produit2){
+            var total = produit1 + produit2;
+            return total;
+        }
+        function Afficher(){
+            var Xafficher = Prix(400,500)
+            document.write("Le prix : " + Xafficher);
+        }
+    </script>
+</head>
+  
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" value="Click" onclick="Afficher()">
+    </form>
+</body>
+</html>
