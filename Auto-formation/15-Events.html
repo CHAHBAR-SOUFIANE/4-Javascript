@@ -1,0 +1,27 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+        
+            function sayHello() {
+               alert("Hello World")
+            }
+         
+            function over() {
+               document.write ("Mouse Over");
+            }            
+                 
+      </script>      
+   </head>
+   
+   <body>
+      <p>Click the following button and see result</p>      
+      <form>
+         <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+      </form>  <hr>
+      
+      <p>Bring your mouse inside the division to see the result:</p>      
+      <div onmouseover = "over()" >
+         <h2> This is inside the division </h2>
+      </div>         
+   </body>
+</html>
