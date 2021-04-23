@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+<body>
+  <div class="main">Hola amigos</div>
+  <button id="btn">Hide div</button>
+<script>
+/*
+*/
+var myDiv = document.querySelector(".main"),
+    myBtn = document.querySelector('#btn');
+
+myBtn.addEventListener("click",function(){
+    myDiv.setAttribute("style","display : none");
+});
+</script>
+</body>
+</html>

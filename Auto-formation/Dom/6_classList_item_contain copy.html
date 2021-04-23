@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+<body>
+    <p class="show click remove add">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, amet corrupti? Laboriosam sapiente unde quo expedita, distinctio totam odio ullam omnis. Vero omnis cum ea esse aperiam eligendi quasi repudiandae.</p>
+   <input type="button" value="click" onclick="test()">
+   <p class="result"></p>
+
+<script>
+/*
+*/
+function test() {
+    var myBtn = document.querySelector("input");
+var myClass = document.querySelector("p");
+var myP = document.querySelector(".result");
+if (myClass.classList.contains(myBtn.getAttribute("value"))) {
+    myP.textContent = myBtn.getAttribute("value");
+}else{
+    alert("found nothing");
+}
+}
+
+</script>
+</body>
+</html>

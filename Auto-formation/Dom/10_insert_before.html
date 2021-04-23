@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+<body>
+    <div id="main"></div>
+    <h2>Hello world</h2>
+  
+<script>
+/*
+*/
+var myDiv = document.querySelector("#main");
+//create new paragragh element
+var newP = document.createElement("p");
+//create new text element
+var newTxt = document.createTextNode("hello from Js");
+//append new text element to new paragragh element
+newP.appendChild(newTxt);
+//append new paragraph to main div befor h2
+// myDiv.appendChild(newP);
+myDiv.insertBefore(newP,myDiv.children[0]);
+
+</script>
+</body>
+</html>

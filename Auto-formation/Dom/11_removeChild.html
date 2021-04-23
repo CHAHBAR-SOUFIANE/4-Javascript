@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+<body>
+    <div id="main">
+        <h2 >Hello world</h2>
+        <p>Hola amigos</p>
+    </div>
+    
+  
+<script>
+/*
+*/
+var myDiv = document.querySelector("#main");
+//get the node name
+console.log(myDiv.childNodes[0].nodeName);
+//get tag name
+console.log(myDiv.childNodes[1].tagName);
+//get value 
+console.log(myDiv.childNodes[1].firstChild.nodeValue);
+
+
+</script>
+</body>
+</html>

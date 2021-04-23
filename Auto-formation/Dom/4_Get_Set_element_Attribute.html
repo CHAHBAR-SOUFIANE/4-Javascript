@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+<body>
+   <div id="show">My div</div>
+   <div class="test"></div>
+   <img src="" alt="">
+<script>
+/*
+element.id = "newId";
+element.className = "newClassName";
+GeAttribute("attributeName"), SetAttribute("attributeName","value") 
+
+*/
+
+var myDiv = document.querySelector("#show");
+myDiv.id = "id_form_js";
+
+var myDiv2 = document.querySelector('.test');
+myDiv2.className = "class_from_js";
+
+var myIMG = document.querySelector('img');
+myIMG.setAttribute("src","http://placehold.it/100/100");
+</script>
+</body>
+</html>

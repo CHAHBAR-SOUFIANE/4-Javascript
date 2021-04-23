@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+<body>
+  <div id="main">
+      <p>This is this</p>
+       <h1>This is this</h1>
+</div>
+  <div id="new"></div>
+<script>
+/*
+*/
+var mainDiv = document.querySelector("#main");
+var newDiv = document.querySelector("#new");
+//save a clone from main div
+var cloneMainDiv = mainDiv.firstElementChild.cloneNode(true);
+//append a clone from main div to new div
+newDiv.appendChild(cloneMainDiv);
+
+</script>
+</body>
+</html>

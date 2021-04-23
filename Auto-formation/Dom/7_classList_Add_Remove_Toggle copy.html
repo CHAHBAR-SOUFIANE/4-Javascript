@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+    <style>
+        .hidden{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+   <p class="test">This is my P</p>
+   <button class="togBtn">show/Hide text</button> 
+
+<script>
+/*
+element.classList.add("className")
+element.classList.remove("className")
+element.classList.Toggle("className")
+*/
+var myP = document.querySelector(".test"); 
+var myB = document.querySelector("button");
+myB.onclick = function(){
+    myP.classList.toggle("hidden");
+};
+</script>
+</body>
+</html>

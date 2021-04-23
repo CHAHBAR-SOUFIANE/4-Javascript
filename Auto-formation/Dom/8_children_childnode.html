@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+    <style>
+        .hidden{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="test">This is my P</p>
+        <button class="togBtn">show/Hide text</button> 
+    </div>
+   
+
+<script>
+/*
+element.childrenElementCount
+element.children.length
+element.children[0].textContent
+element.childNodes //All elemnts (tags, text, comment, space ...)
+element.childNodes[0]
+element.firstChild //All elemnts (tags, text, comment, space ...)
+element.lastChild //All elemnts (tags, text, comment, space ...)
+element.firstElementChild //just elemnt tag
+element.lastElementChild //just elemnt tag
+*/
+var myDiv = document.querySelector("#main");
+console.log(myDiv.children[0].textContent);
+</script>
+</body>
+</html>
